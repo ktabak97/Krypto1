@@ -52,7 +52,7 @@ int main()
 		{
 			if ((tekst[i] >= 'A') && (tekst[i] <= 'Z'))
 			{
-				tekst[i] = ((tekst[i] - 'A') - (klucz[a % strlen(klucz)] - 'A') + 26) % 26 + 'A';
+				tekst[i] = ((tekst[i] - 'A') + (klucz[a % strlen(klucz)] - 'A')) % 26 + 'A';
 				a++;
 			}
 		}
